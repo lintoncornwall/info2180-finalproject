@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f6fa;
+}
+
+.layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #0f172a;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 5px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #1f2937;
+}
+
+.sidebar .logout {
+  margin-top: 40px;
+  color: #ff6b6b;
+}
+
+/* Main */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  background: #6c63ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.filter-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-bar button {
+  border: none;
+  background: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-bar button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Table */
+.table-wrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f4f6ff;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+}
+
+.badge.sales {
+  background: #fbc02d;
+}
+
+.badge.support {
+  background: #6c63ff;
+}
+
+a {
+  color: #6c63ff;
+}
