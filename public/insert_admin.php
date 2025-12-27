@@ -1,5 +1,5 @@
 <?php
-require 'db_connection.php';
+require 'db.php';
 
 $password = password_hash("password123", PASSWORD_DEFAULT);
 
