@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../includes/auth.php';
 requireLogin();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,11 @@ requireLogin();
 <body>
     <h1>Dashboard</h1>
     <p>You are logged in as <?php echo htmlspecialchars($_SESSION['user']['firstname']); ?>.</p>
+    
+    <?php if (isAdmin()): ?> 
+    <p><a href="add_user.php">Add New User</a></p> 
+    <?php endif; ?>
+
     <p><a href="logout.php">Logout</a></p>
 </body>
 </html>
