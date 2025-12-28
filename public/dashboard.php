@@ -17,7 +17,7 @@ requireLogin();
   <aside class="sidebar">
     <h2>Dolphin CRM</h2>
     <ul>
-      <li class="active">Home</li>
+      <li class="active"><a href="dashboard.php">Home</a></li>
       <li><a href="new_contact.php">New Contact</a></li>
 
       <?php if (isAdmin()): ?>
